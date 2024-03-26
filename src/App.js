@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import Header from "./Header.js"
+import Acca from "./Acca.js"
+import KickOff from "./kickOff.js"
+import Learn from "./Learn.js"
+import Placement from "./Placement.js"
+import Wcu from "./Wcu.js"
+import Eligibility from "./Eligibility.js"
 import './App.css';
+import "./index.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Acca/>
+      <Wcu/>
+      <Eligibility/>
+      <Learn/>
+      <Placement/>
+      <KickOff/>
     </div>
   );
 }

@@ -36,3 +36,197 @@
     transform: rotate(360deg);
   }
 }
+
+
+.card{
+ 
+  box-shadow: 0 4px 10px rgb(85, 85, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:200px;
+  max-width: 250px;
+  background-color: transparent;
+  margin-right: 40px;
+  border: none;
+  color: navy;
+  font-weight: 600;
+  
+}
+
+@media (max-width:600px) {
+  .card{
+    display: none;
+  }
+}
+
+.cards{
+  display: flex;
+}
+
+.lg-buttons{
+  display: flex;
+}
+
+.blue-button{
+  background-color: blue;
+  color: white;
+  border:1px solid blue;
+  border-radius: 4px;
+  width:250px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.red-button{
+  background-color: red;
+  color: white;
+  border:1px solid red;
+  border-radius: 4px;
+  width:250px;
+  padding: 10px;
+}
+
+.form{
+  background-color: white;
+  /* box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5), -5px 0 5px -5px rgba(0, 0, 0, 0.5); */
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5), -5px 0 5px -5px rgba(0, 0, 0, 0.5), 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+  border-top: 8px solid navy;
+  border-radius: 4px;
+  padding:5px
+  
+}
+
+@media (min-width:600px){
+  .form{
+    padding: 20px;
+  }
+}
+
+.custom-hr-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.custom-hr {
+  border: none;
+  width: 10%;
+  height: 5px;
+  background-color: navy;
+  color: navy;
+}
+
+.learn-cards{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:600px){
+  .learn-cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.learn-card {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin: 20px;
+  background-color: whitesmoke;
+  
+}
+
+
+
+.card-header, .card-footer {
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+
+
+.card-body {
+  padding: 10px;
+  max-width: 200px;
+  height: 300px;
+}
+
+@media (max-width:600px){
+  .card-body {
+    padding: 10px;
+    max-width: 400px;
+    height: 300px;
+  }
+  
+}
+
+.wcu-card {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: whitesmoke;
+  margin-right: 20px;
+}
+
+.headerC{
+  font-size: 14px;
+}
+
+@media (min-width:600px) {
+  .headerC{
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+}
+
+.h-button{
+  color:navy;
+  background-color: rgb(241, 241, 236);
+  border:none;
+  border-radius: 4px;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+@media (max-width:600px) {
+  .h-button{
+    padding: 2px;
+  }
+}
+
+.callback-b{
+  background-color: navy;
+  color: white;
+  border-radius: 4px;
+  border:1px solid blue;
+  width:750px;
+  padding: 10px;
+}
+
+@media (max-width:500px){
+  .callback-b{
+    width:150px
+  }
+}
+
+.callback-b2{
+  background-color: navy;
+  color: white;
+  border-radius: 4px;
+  border:1px solid blue;
+  width:580px;
+  padding: 10px;
+}
+
+@media (max-width:500px){
+  .callback-b2{
+    width:100px
+  }
+}
