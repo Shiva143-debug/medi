@@ -1,0 +1,705 @@
+/* Responsive CSS for ACCA Application */
+
+/* ===== MOBILE MENU STYLES ===== */
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: navy;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-nav p {
+  margin: 10px 0;
+  padding: 8px 0;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.mobile-nav p:last-child {
+  border-bottom: none;
+}
+
+/* ===== RESPONSIVE GRID SYSTEM ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+.col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+.col-3 { flex: 0 0 25%; max-width: 25%; }
+.col-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+.col-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+.col-6 { flex: 0 0 50%; max-width: 50%; }
+.col-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+.col-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+.col-9 { flex: 0 0 75%; max-width: 75%; }
+.col-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+.col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+.col-12 { flex: 0 0 100%; max-width: 100%; }
+
+/* ===== EXTRA LARGE DEVICES (1200px and up) ===== */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  .card {
+    max-width: 250px;
+  }
+  
+  .wcu-card {
+    max-width: 300px;
+  }
+  
+  .learn-card {
+    max-width: 350px;
+  }
+  
+  .form {
+    padding: 30px;
+  }
+  
+  .headerC {
+    padding: 15px 0;
+  }
+  
+  .h-button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .blue-button, .red-button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  
+  .footer {
+    padding: 80px 0 20px;
+  }
+}
+
+/* ===== LARGE DEVICES (992px to 1199px) ===== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .section {
+    padding: 70px 0;
+  }
+  
+  .card {
+    max-width: 220px;
+  }
+  
+  .wcu-card {
+    max-width: 280px;
+  }
+  
+  .learn-card {
+    max-width: 300px;
+  }
+  
+  .form {
+    padding: 25px;
+  }
+  
+  .headerC {
+    padding: 12px 0;
+  }
+  
+  .h-button {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+  
+  .blue-button, .red-button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+  
+  .footer {
+    padding: 70px 0 20px;
+  }
+  
+  /* Specific adjustments for large devices */
+  .wcu-cards {
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .eligibility-container {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .eligibility-card {
+    max-width: 220px;
+  }
+}
+
+/* ===== MEDIUM DEVICES (768px to 991px) ===== */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  /* Grid adjustments */
+  .col-md-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .col-md-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .col-md-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-md-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-md-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .col-md-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .col-md-12 { flex: 0 0 100%; max-width: 100%; }
+  
+  /* Header adjustments */
+  .header-nav {
+    gap: 15px;
+  }
+  
+  .h-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  /* Card adjustments */
+  .card {
+    max-width: 200px;
+  }
+  
+  .cards {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .wcu-card {
+    max-width: 220px;
+    min-height: 300px;
+  }
+  
+  .wcu-cards {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .learn-card {
+    max-width: 320px;
+  }
+  
+  .learn-cards {
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Button adjustments */
+  .blue-button, .red-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .lg-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Form adjustments */
+  .form {
+    padding: 20px;
+  }
+  
+  .form p {
+    font-size: 18px;
+  }
+  
+  /* Eligibility adjustments */
+  .eligibility-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .eligibility-card {
+    max-width: 200px;
+    margin: 10px;
+  }
+  
+  /* Footer adjustments */
+  .footer {
+    padding: 60px 0 20px;
+  }
+  
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    flex: 0 0 45%;
+    min-width: auto;
+  }
+}
+
+/* ===== SMALL DEVICES (576px to 767px) ===== */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  /* Grid adjustments */
+  .col-sm-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .col-sm-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-sm-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .col-sm-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-sm-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .col-sm-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-sm-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .col-sm-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+  
+  /* Header adjustments */
+  .headerC {
+    padding: 10px 0;
+  }
+  
+  .header-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .h-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  /* Card adjustments */
+  .card {
+    max-width: 45%;
+    margin: 10px;
+  }
+  
+  .cards {
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .wcu-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .wcu-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .learn-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .learn-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Button adjustments */
+  .lg-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .blue-button, .red-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .callback-b, .callback-b2 {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  /* Form adjustments */
+  .form {
+    padding: 20px 15px;
+  }
+  
+  .form p {
+    font-size: 16px;
+  }
+  
+  /* Eligibility adjustments */
+  .eligibility-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .eligibility-card {
+    width: 45%;
+    max-width: none;
+    margin: 10px;
+  }
+  
+  /* Footer adjustments */
+  .footer {
+    padding: 50px 0 20px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  /* Acca and KickOff sections */
+  .row {
+    flex-direction: column;
+  }
+  
+  .col-5, .col-6, .col-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+}
+
+/* ===== EXTRA SMALL DEVICES (575px and down) ===== */
+@media only screen and (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  /* Grid adjustments */
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* Header adjustments */
+  .headerC {
+    padding: 8px 0;
+  }
+  
+  .header-container {
+    padding: 0 10px;
+  }
+  
+  .header-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .h-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  /* Card adjustments */
+  .card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .wcu-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .wcu-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .learn-card {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+  
+  .learn-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Button adjustments */
+  .lg-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .blue-button, .red-button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .callback-b, .callback-b2 {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /* Form adjustments */
+  .form {
+    padding: 15px 10px;
+    margin: 10px 0;
+  }
+  
+  .form p {
+    font-size: 16px;
+  }
+  
+  .form input, .form select {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Eligibility adjustments */
+  .eligibility-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .eligibility-card {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+  }
+  
+  /* Section title adjustments */
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .section-title:after {
+    width: 60px;
+    height: 3px;
+    bottom: -10px;
+  }
+  
+  /* Custom HR adjustments */
+  .custom-hr {
+    width: 60px;
+    height: 4px;
+  }
+  
+  /* Footer adjustments */
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .footer-section {
+    width: 100%;
+    min-width: auto;
+    padding: 0 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .social-icons {
+    gap: 10px;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  /* Acca and KickOff sections */
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .col-5, .col-6, .col-4 {
+    padding: 0;
+    margin: 10px 0;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out forwards;
+}
+
+/* Staggered animations for cards */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+.wcu-card:nth-child(1) { animation-delay: 0.1s; }
+.wcu-card:nth-child(2) { animation-delay: 0.2s; }
+.wcu-card:nth-child(3) { animation-delay: 0.3s; }
+
+.learn-card:nth-child(1) { animation-delay: 0.1s; }
+.learn-card:nth-child(2) { animation-delay: 0.2s; }
+.learn-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .header-nav, .h-button, .blue-button, .red-button, .mobile-menu-toggle {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .footer {
+    background-color: #fff;
+    color: #000;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-section h3:after {
+    background-color: #000;
+  }
+  
+  .card, .wcu-card, .learn-card, .eligibility-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  
+  .card-header, .card-footer {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+}
